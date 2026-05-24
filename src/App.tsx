@@ -5,7 +5,8 @@ import { AuthProvider, AuthContext } from './context/AuthContext';
 // Import all your pages and components
 import Login from './pages/Login';
 import Navbar from './components/Navbar';
-import Orders from './pages/Orders'; // <-- Make sure this import is here!
+import Orders from './pages/Orders';
+import Products from './pages/Product'; // <-- Make sure this import is here!
 
 // 1. Define Props for the Protected Route
 interface ProtectedRouteProps {
@@ -40,6 +41,7 @@ function AppRoutes() {
             <div style={{ flex: 1, padding: '40px', backgroundColor: '#f8f9fa' }}>
                 <Routes>
                     <Route path="/login" element={<Login />} />
+                    <Route path="/products" element={<Products />} />
                     
                     <Route path="/" element={
                         <ProtectedRoute>

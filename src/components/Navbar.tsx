@@ -36,6 +36,7 @@ export default function Navbar() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
                 <Link to="/" style={linkStyle}>Dashboard</Link>
                 <Link to="/orders" style={linkStyle}>Orders</Link>
+                <Link to="/products" style={linkStyle}>Products</Link>
                 
                 {isAdmin && (
                     <Link to="/admin" style={{ ...linkStyle, color: '#e74c3c', fontWeight: 'bold' }}>
